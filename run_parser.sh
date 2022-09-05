@@ -1,1 +1,1 @@
-python3 conf_paperlist_parser.py --conf_name cvpr --year 2020
+python3 conf_paperlist_parser.py --conf_name eccv --year 2020
