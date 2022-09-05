@@ -52,3 +52,4 @@ for i, name in enumerate(names):
 dict = {'tag': tags, 'name':names, 'checked':checked, 'selected': selected}
 df = pd.DataFrame(data=dict)
 df.to_csv('csvs/' + filename + ".csv", index=False)
+print(filename + ".csv saved in csvs/")
