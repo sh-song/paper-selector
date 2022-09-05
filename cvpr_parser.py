@@ -1,9 +1,29 @@
 import csv
 import numpy as np
 import pandas as pd
+import argparse
 
-CONF_NAME = 'cvpr'
-YEAR = '2021'
+argparser = argparse.ArgumentParser(
+    description="ask shs"
+)
+
+argparser.add_argument(
+    '--conf_name',
+    default='cvpr',
+    help='conference name'
+)
+argparser.add_argument(
+    '--year',
+    default='2022',
+    help='year in 4 digits'
+)
+
+args = argparser.parse_args()
+
+
+CONF_NAME = args.conf_name
+YEAR = args.year
+
 filename = CONF_NAME + "-" + YEAR 
 
 #Open file
