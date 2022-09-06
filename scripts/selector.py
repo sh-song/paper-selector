@@ -62,12 +62,14 @@ class Selector:
         is_on = True
         temp_cnt = 0
         while is_on:
-            is_on = self.select_paper()
-            temp_cnt +=1
+
             #auto save
+            temp_cnt +=1
             if temp_cnt > 10:
                 self.save_csv()
                 temp_cnt = 0
+
+            is_on = self.select_paper()
 
         self.save_csv()        
 if __name__ == "__main__":

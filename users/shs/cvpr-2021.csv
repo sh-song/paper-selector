@@ -231,18 +231,18 @@ cvpr-2021-228,Gated Spatio-Temporal Attention-Guided Video Deblurring,1,0
 cvpr-2021-229,Learning Multi-Scale Photo Exposure Correction,1,0
 cvpr-2021-230,Learning Semantic Person Image Generation by Region-Adaptive Normalization,1,0
 cvpr-2021-231,Rethinking Class Relations: Absolute-Relative Supervised and Unsupervised Few-Shot Learning,1,0
-cvpr-2021-232,Divergence Optimization for Noisy Universal Domain Adaptation,0,0
-cvpr-2021-233,Learning Dynamic Alignment via Meta-Filter for Few-Shot Learning,0,0
-cvpr-2021-234,Unsupervised Learning of 3D Object Categories From Videos in the Wild,0,0
-cvpr-2021-235,Exploring Heterogeneous Clues for Weakly-Supervised Audio-Visual Video Parsing,0,0
-cvpr-2021-236,Dogfight: Detecting Drones From Drones Videos,0,0
-cvpr-2021-237,PAUL: Procrustean Autoencoder for Unsupervised Lifting,0,0
-cvpr-2021-238,Group Collaborative Learning for Co-Salient Object Detection,0,0
-cvpr-2021-239,RobustNet: Improving Domain Generalization in Urban-Scene Segmentation via Instance Selective Whitening,0,0
-cvpr-2021-240,Monocular Real-Time Full Body Capture With Inter-Part Correlations,0,0
-cvpr-2021-241,Pre-Trained Image Processing Transformer,0,0
-cvpr-2021-242,Robust and Accurate Object Detection via Adversarial Learning,0,0
-cvpr-2021-243,Faster Meta Update Strategy for Noise-Robust Deep Learning,0,0
+cvpr-2021-232,Divergence Optimization for Noisy Universal Domain Adaptation,1,0
+cvpr-2021-233,Learning Dynamic Alignment via Meta-Filter for Few-Shot Learning,1,0
+cvpr-2021-234,Unsupervised Learning of 3D Object Categories From Videos in the Wild,1,0
+cvpr-2021-235,Exploring Heterogeneous Clues for Weakly-Supervised Audio-Visual Video Parsing,1,0
+cvpr-2021-236,Dogfight: Detecting Drones From Drones Videos,1,1
+cvpr-2021-237,PAUL: Procrustean Autoencoder for Unsupervised Lifting,1,0
+cvpr-2021-238,Group Collaborative Learning for Co-Salient Object Detection,1,0
+cvpr-2021-239,RobustNet: Improving Domain Generalization in Urban-Scene Segmentation via Instance Selective Whitening,1,0
+cvpr-2021-240,Monocular Real-Time Full Body Capture With Inter-Part Correlations,1,0
+cvpr-2021-241,Pre-Trained Image Processing Transformer,1,0
+cvpr-2021-242,Robust and Accurate Object Detection via Adversarial Learning,1,0
+cvpr-2021-243,Faster Meta Update Strategy for Noise-Robust Deep Learning,1,1
 cvpr-2021-244,ContactOpt: Optimizing Contact To Improve Grasps,0,0
 cvpr-2021-245,Panoptic-PolarNet: Proposal-Free LiDAR Point Cloud Panoptic Segmentation,0,0
 cvpr-2021-246,Source-Free Domain Adaptation for Semantic Segmentation,0,0
