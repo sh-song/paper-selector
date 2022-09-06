@@ -12,8 +12,10 @@
 
 ### To signin as new user
 1. Edit run_signin.sh as below 
+
 --user "yourname"
 --targets "your" "paperlist" "as many as you want"
+
 2. $./run_signin.sh
 
 ### To select papers from paperlist
