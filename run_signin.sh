@@ -1,1 +1,1 @@
-python3 start.py --user sh --targets cvpr-2021 iccv-2011
+python3 signin.py --user shs --targets cvpr-2021 eccv-2020 iccv-2019
