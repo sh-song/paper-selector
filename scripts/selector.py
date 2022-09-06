@@ -13,7 +13,7 @@ class Selector:
         for i, filename in enumerate(self.file_list):
             print(f"{i}. {filename}")
             
-        userinput = input('number?: ')
+        userinput = input('select paperlist: ')
         self.paperlist_name = self.file_list[int(userinput)] 
         print(f"{self.paperlist_name} is selected.")
 
@@ -32,6 +32,7 @@ class Selector:
     def select_paper(self):
         papername = self.paperlist.loc[self.current_point, 'name']
         userinput = input(papername + "\n")
+        print('\033[31m' + papername + '\033[0m' + "\n")
 
         if userinput== '':
             print('pass\n')
