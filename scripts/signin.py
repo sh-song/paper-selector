@@ -1,6 +1,7 @@
 import argparse
 import os
 import shutil
+import json
 
 argparser = argparse.ArgumentParser()
 
@@ -18,21 +19,28 @@ argparser.add_argument(
 )
 
 args = argparser.parse_args()
+data = {}
+data['user_name'] = args.user_name
+data['user_dir'] ='users/' + args.user_name
 
-user_dir = 'users/' + args.user_name
-if os.path.isdir(user_dir) == False:
-    os.mkdir(user_dir)
-    print(f"User directory '{args.user_name}' is created.")
+if os.path.isdir(data['user_dir']) == False:
+    os.mkdir(data['user_dir'])
+    print(f"User directory '{data['user_name']}' is created.")
 else:
-    print(f"User directory '{args.user_name}' already exists.")
+    print(f"User directory '{data['user_name']}' already exists.")
 
+data['file_list'] =[]
 for item in args.targets:
     filename = item + '.csv'
-    if not os.path.exists(user_dir + '/' + filename):
+    data['file_list'].append(filename)
+    if not os.path.exists(data['user_dir'] + '/' + filename):
         try:
-            shutil.copy('csvs/' +  filename, user_dir)
-            print(f"{filename} copied to {user_dir}")
+            shutil.copy('csvs/' +  filename, data['user_dir'])
+            print(f"{filename} copied to {data['user_dir']}")
         except FileNotFoundError as e:
             print(e)
     else:
-        print(f"{user_dir + '/' + filename} already exists.")
+        print(f"{data['user_dir'] + '/' + filename} already exists.")
+
+with open(data['user_dir'] + '/' + 'config.json', 'w') as fp:
+    json.dump(data, fp)
