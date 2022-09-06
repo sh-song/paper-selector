@@ -8,6 +8,7 @@ class Selector:
         self.file_list = config['file_list']
         self.paperlist_name = ''
         self.paperlist = None
+        self.paperlist_size = -1
         self.current_point = -1
     def select_paperlist(self):
         for i, filename in enumerate(self.file_list):
@@ -22,8 +23,8 @@ class Selector:
         self.paperlist = pd.read_csv(paperlist_dir)
 
     def check_startpoint(self):
-        paperlist_size = self.paperlist.shape[0] -1 #except tags
-        for i in range(paperlist_size):
+        self.paperlist_size = self.paperlist.shape[0] -1 #except tags
+        for i in range(self.paperlist_size):
             checked = self.paperlist.loc[i, 'checked']
             if checked == 0:
                 self.current_point = i
@@ -35,7 +36,7 @@ class Selector:
         COLORRESET = '\033[0m' 
         papername_with_color = YELLOW + papername + COLORRESET
         userinput = input(papername_with_color + '\n')
-
+        print(self.current_point, '/', self.paperlist_size)
         if userinput== '':
             print('pass\n')
         elif userinput == 'exit':
@@ -59,8 +60,14 @@ class Selector:
         self.check_startpoint()
 
         is_on = True
+        temp_cnt = 0
         while is_on:
             is_on = self.select_paper()
+            temp_cnt +=1
+            #auto save
+            if temp_cnt > 10:
+                self.save_csv()
+                temp_cnt = 0
 
         self.save_csv()        
 if __name__ == "__main__":
