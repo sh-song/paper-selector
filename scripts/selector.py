@@ -35,11 +35,12 @@ class Selector:
         YELLOW = '\033[33m'
         COLORRESET = '\033[0m' 
         papername_with_color = YELLOW + papername + COLORRESET
+
         userinput = input(papername_with_color + '\n')
-        print(self.current_point, '/', self.paperlist_size)
+
         if userinput== '':
             print('pass\n')
-        elif userinput == 'exit':
+        elif userinput == 'q':
             print('exit\n')
             return False
         else:
@@ -50,6 +51,11 @@ class Selector:
         self.current_point +=1        
         
         return True
+
+    def show_progress(self):
+        percentage = self.current_point / self.paperlist_size * 100
+        print(self.current_point, '/', self.paperlist_size,'....', percentage, "%")
+
     def save_csv(self):
         self.paperlist.to_csv(self.user_dir + '/' + self.paperlist_name, index=False)
         print(f"{self.user_dir + '/' + self.paperlist_name} saved.")
@@ -62,7 +68,6 @@ class Selector:
         is_on = True
         temp_cnt = 0
         while is_on:
-
             #auto save
             temp_cnt +=1
             if temp_cnt > 10:
@@ -70,6 +75,7 @@ class Selector:
                 temp_cnt = 0
 
             is_on = self.select_paper()
+            self.show_progress()
 
         self.save_csv()        
 if __name__ == "__main__":

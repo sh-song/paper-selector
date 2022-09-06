@@ -1,8 +1,8 @@
 tag,name,checked,selected
-eccv-2020-0,Quaternion Equivariant Capsule Networks for 3D Point Clouds,0,0
-eccv-2020-1,DeepFit: 3D Surface Fitting via Neural Network Weighted Least Squares,0,0
-eccv-2020-2,NSGANetV2: Evolutionary Multi-Objective Surrogate-Assisted Neural Architecture Search,0,0
-eccv-2020-3,Describing Textures using Natural Language,0,0
+eccv-2020-0,Quaternion Equivariant Capsule Networks for 3D Point Clouds,1,1
+eccv-2020-1,DeepFit: 3D Surface Fitting via Neural Network Weighted Least Squares,1,1
+eccv-2020-2,NSGANetV2: Evolutionary Multi-Objective Surrogate-Assisted Neural Architecture Search,1,0
+eccv-2020-3,Describing Textures using Natural Language,1,0
 eccv-2020-4,Empowering Relational Network by Self-Attention Augmented Conditional Random Fields for Group Activity Recognition,0,0
 eccv-2020-5,AiR: Attention with Reasoning Capability,0,0
 eccv-2020-6,Self6D: Self-Supervised Monocular 6D Object Pose Estimation,0,0
