@@ -31,8 +31,10 @@ class Selector:
 
     def select_paper(self):
         papername = self.paperlist.loc[self.current_point, 'name']
-        userinput = input(papername + "\n")
-        print('\033[31m' + papername + '\033[0m' + "\n")
+        YELLOW = '\033[33m'
+        COLORRESET = '\033[0m' 
+        papername_with_color = YELLOW + papername + COLORRESET
+        userinput = input(papername_with_color + '\n')
 
         if userinput== '':
             print('pass\n')
