@@ -22,4 +22,5 @@
 2. $./run_selector.sh
 3. Follow instruction on shell prompt
 * Press ENTER to pass the paper
-* Put in 'exit' to save and exit
+* Put in 'q' to save and exit
+* Put in anykey except 'q' to select the paper
